@@ -1,9 +1,15 @@
 import "./App.module.css";
+import { Route, Routes } from "react-router-dom";
+import SignupForm from "./pages/auth/SignupForm";
 
 function App() {
   return (
     <div>
-      <h1>ecommerce</h1>
+      <Routes>
+        <Route path="/signup" element={<SignupForm />}>
+          ecommerce
+        </Route>
+      </Routes>
     </div>
   );
 }
